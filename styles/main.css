@@ -78,10 +78,10 @@ footer {
 
     margin: 10px;
     padding: 10px;
-    width: 600px;
-    height: 340px;
+    width:fit-content;
+    height:fit-content;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 0px;
     border-style: double;
     border-width: 10px;
@@ -110,26 +110,9 @@ footer {
 
 .Submitform__items--styles {
     font-family: 'VT323', monospace;
-    color:rgb(21, 6, 35);
+    color:rgb(255, 255, 255);
 }
 
-.submitform__clickbutton {
-    display: flex;
-    justify-self: flex-end;
-    font-family: 'VT323', monospace;
-
-}
-
-.Submitform__clickbutton--styles {
-    width: 20px;
-    height:20px;
-
-    background-image: url(../images/MicrosoftTeams-image.png);
-    background-size: cover;
-    background: none;
-    border:none;
-    padding: 10px;
-}
 
 .inputtext, .selector__text, input {
     font-family: 'VT323', monospace;
@@ -147,7 +130,7 @@ footer {
 }
 
 .checkbox--smallprint {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .submitform__text--H3 {
@@ -159,11 +142,42 @@ footer {
     font-size: 30px;
 }
 
+
+
+
+
+
 .clickbuttonlabel--styles {
     font-family: 'VT323', monospace;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 600;
     color: #00ff2f;
+}
+
+.clickbutton--styles {
+    background: url(../images/MicrosoftTeams-image.png);
+    width: 40px;
+    height: 40px;
+}
+
+
+/*
+.submitform__clickbutton {
+    display: flex;
+    justify-self: flex-end;
+    font-family: 'VT323', monospace;
+
+}
+
+.Submitform__clickbutton--styles {
+    width: 20px;
+    height:20px;
+
+    
+    background-size: cover;
+    background: none;
+    border:none;
+    padding: 10px;
 }
 
 
