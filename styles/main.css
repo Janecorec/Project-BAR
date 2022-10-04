@@ -1,0 +1,126 @@
+
+
+
+
+
+body, html {  
+    height: 100%;
+
+    /* The image used */
+    background-image: url("../images/Project\ 1.png");
+  
+    /* Full height */
+    height: 100%;
+ 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+
+
+    max-width: 1400px;
+    width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+.Submitform {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+    height: 330px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(25, 4, 37);
+}
+
+
+.Submitform__items {
+    display:flex;
+    /*reversed due to column*/
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width:600px;
+    height:330px;
+
+    /*
+    padding: 20px;
+    background-color: rgb(246, 241, 241);
+    border-radius: 4px;
+    border-style: double;
+    border-color: black;
+    box-shadow: 4,4,4,4 inset #5555;*/
+    
+}
+
+.Submitform__items--styles {
+    font-family: 'VT323', monospace;
+    color:rgb(21, 6, 35);
+}
+
+.submitform__clickbutton {
+    display: flex;
+    justify-self: flex-end;
+    font-family: 'VT323', monospace;
+
+}
+
+.Submitform__clickbutton--styles {
+    width: 20px;
+    height:20px;
+
+    background-image: url(../images/MicrosoftTeams-image.png);
+    background-size: cover;
+    background: none;
+    border:none;
+    padding: 10px;
+}
+
+.inputtext, .selector__text {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color:blueviolet;
+}
+
+.Submitform__name, .Submitform__dreamtext, .Submitform__email, .Submitform__clickbutton, 
+.Submitform__password, .Submitform__Checkbox, .Submitform__dropmenu {
+    margin: 10;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+
+.submitform__text--H3 {
+    /*CONTACT US*/
+    margin-left: 10px;
+    font-family: 'VT323', monospace;
+    color:rgb(0, 255, 47);
+    font-weight:600;
+    font-size: 30px;
+}
+
+.clickbuttonlabel--styles {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00ff2f;
+}
