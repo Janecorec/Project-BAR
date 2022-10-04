@@ -1,13 +1,11 @@
 
 
 
-
-
 body, html {  
     height: 100%;
 
     /* The image used */
-    background-image: url("../images/Project\ 1.png");
+    background-image: url(../images/Project\ 1.png);
   
     /* Full height */
     height: 100%;
@@ -31,6 +29,44 @@ body, html {
 
 
 
+/*>>>>>>>>>FOOTER STYLING>>>>>>>>>>*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.204);
+    height: auto;
+    width: 100%;   /*Rosie changed to %*/
+    font-family: "oswald";
+    padding-top: 0px;
+    color: #fff;
+    z-index: 10000;
+}
+
+.footer-content {
+    background: rgba(0, 0, 0, 0.253);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.footer-content span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight:200;
+}    
+
+
+/*>>>>>>>>>FORM STYLING ~~flexbox container~~ >>>>>>>>>>*/
 .Submitform {
     display: flex;
     
@@ -38,11 +74,12 @@ body, html {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    
 
     margin: 10px;
     padding: 10px;
     width: 600px;
-    height: 330px;
+    height: 340px;
 
     background-color: rgb(255, 255, 255);
     border-radius: 0px;
@@ -51,7 +88,7 @@ body, html {
     border-color: rgb(25, 4, 37);
 }
 
-
+/*>>>>>>>>>FORM STYLING ~~flexbox items~~ >>>>>>>>>>*/
 .Submitform__items {
     display:flex;
     /*reversed due to column*/
@@ -60,7 +97,7 @@ body, html {
     flex-direction: column;
     width:600px;
     height:330px;
-
+    padding: 5px;
     /*
     padding: 20px;
     background-color: rgb(246, 241, 241);
@@ -94,19 +131,23 @@ body, html {
     padding: 10px;
 }
 
-.inputtext, .selector__text {
+.inputtext, .selector__text, input {
     font-family: 'VT323', monospace;
     font-size: 14px;
     color:blueviolet;
 }
 
-.Submitform__name, .Submitform__dreamtext, .Submitform__email, .Submitform__clickbutton, 
+.Submitform__name, .Submitform__enquiretext, .Submitform__email, .Submitform__clickbutton, 
 .Submitform__password, .Submitform__Checkbox, .Submitform__dropmenu {
     margin: 10;
     margin-left: 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     
+}
+
+.checkbox--smallprint {
+    font-size: 10px;
 }
 
 .submitform__text--H3 {
@@ -124,3 +165,6 @@ body, html {
     font-weight: 200;
     color: #00ff2f;
 }
+
+
+
