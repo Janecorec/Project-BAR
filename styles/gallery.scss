@@ -1,0 +1,104 @@
+$primary-color:#511ab7;
+
+@keyframes myrkrig {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+@keyframes itemzoom {
+    0%  {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+
+@keyframes rotate {
+    0%  {transform: rotate(2deg);}
+    50% {transform: rotate(-20deg);}
+    100%{transform: rotate(2deg);}
+}
+
+body{
+    background: linear-gradient(180deg, black 0%, $primary-color 100%);
+}
+
+main{
+    margin: auto;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+   // background-color: aqua;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.gallery__container{
+    h1{
+        font-family: 'VT323', monospace;
+        color: white;    
+        font-size: 6rem;
+        margin-bottom: 0px;
+    }
+    animation: rotate 200s ease infinite;  
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    max-width: 1100px;
+    width: 100%;
+    min-height: 900px;
+    height: 100%;
+    //background-color: blue;
+}
+
+.gallery__part{
+    animation: itemzoom 100s linear infinite;
+    width: 80%;
+    margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+&.one{
+
+}    
+
+&.three{
+
+}
+
+}
+
+
+.gallery__item{
+    overflow: hidden;
+    position: relative;
+    transform: scale(0.8);
+
+&:hover{transform: scale(1.2) rotate(5deg);
+transition: all .5s ease-in-out;}    
+
+&:hover .overlay{
+    opacity: 0;}
+}
+
+.overlay{
+    position: absolute;
+    background-color: $primary-color;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.myrkrig{
+    opacity: 0;
+    animation: myrkrig 1s ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-delay: 5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
