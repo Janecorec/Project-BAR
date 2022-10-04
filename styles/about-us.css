@@ -1,69 +1,87 @@
 body {
-    max-width: 1500px;
-    width: 100%;
-    text-align: center;
-    background-color: #511ab7;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+  max-width: 1400px;
+  min-height: 600px;
+  width: 100%;
+  text-align: center;
+  background-image: url(../images/Project\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  z-index: 100;
+  transform: scale(0.7);
 }
 
 .story {
-    border-width: 15px;
-    border-radius: 5px;
-    margin: 50px;
-    padding: 10px;
-    max-width: 800px;
-    width: 100%;
-    min-height: 300px;
-    background-color: gray;
-    border-style: double;
-    border-color: black;
+  border-width: 10px;
+  border-radius: 0px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(139, 15, 143, 0.5);
+  border-style: double;
+  border-color: rgb(25, 4, 37);
 }
 
 .location {
-    border-width: 15px;
-    border-radius: 5px;
-    margin: 50px;
-    padding: 10px;
-    max-width: 800px;
-    width: 100%;
-    min-height: 300px;
-    background-color: gray;
-    border-style: double;
-    border-color: black;
+  border-width: 10px;
+  border-radius: 0px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(139, 15, 143, 0.5);
+  border-style: double;
+  border-color: rgb(25, 4, 37);
 }
 
 .founders {
-    display: grid;
+  border-width: 10px;
+  border-radius: 0px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(139, 15, 143, 0.5);
+  border-style: double;
+  border-color: rgb(25, 4, 37);
+}
 
-    grid-template-columns: 3, 1fr;
-    grid-template-rows: 3, 1fr;
-    grid-gap: 20px;
-    text-align: center;
-    border-width: 15px;
-    border-radius: 5px;
-    margin: 50px;
-    padding: 10px;
-    max-width: 800px;
-    width: 100%;
-    min-height: 300px;
-    background-color: gray;
-    border-style: double;
-    border-color: black;
+.founders__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  min-height: 300px;
 }
 
 .gridpicture1 {
-    background-color: #511ab7;
-    grid
+  background-color: #511ab7;
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
 
 .gridpicture2 {
-
-    background-color: #511ab7;
+  background-color: #511ab7;
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 
 .gridpicture3 {
-    background-color: #511ab7;
+  background-color: #511ab7;
+  grid-column: 3/4;
+  grid-row: 1/3;
 }
