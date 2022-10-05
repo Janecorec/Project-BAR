@@ -22,17 +22,18 @@ header {
   align-items: center;
   gap: 50px;
 }
-.menu li a {
+
+li a {
   text-decoration: none;
   color: #00ff2f;
   font-family: "VT323", monospace;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-.menu li a:hover {
+li a:hover {
   color: white;
   text-decoration: underline;
 }
-.menu li a:active {
+li a:active {
   color: white;
   text-decoration: underline;
 }
@@ -56,10 +57,10 @@ header {
 }
 @-webkit-keyframes itemzoom {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   100% {
     transform: scale(1);
@@ -67,10 +68,10 @@ header {
 }
 @keyframes itemzoom {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   100% {
     transform: scale(1);
@@ -98,10 +99,6 @@ header {
     transform: rotate(2deg);
   }
 }
-/*
-body{
-    background: linear-gradient(180deg, black 0%, #06022c 50%, #04021b 80%, #030567 100%);
-}*/
 main {
   margin: auto;
   max-width: 1400px;
@@ -128,7 +125,7 @@ main {
 .gallery__container h1 {
   font-family: "VT323", monospace;
   color: #00ff2f;
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 0px;
 }
 
@@ -136,7 +133,7 @@ main {
   -webkit-animation: itemzoom 100s linear infinite;
           animation: itemzoom 100s linear infinite;
   width: 80%;
-  margin: 30px;
+  margin: 0px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
