@@ -177,9 +177,7 @@ main {
 
 footer {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 1;
   background: rgba(17, 17, 17, 0.204);
   height: auto;
   width: 100%;

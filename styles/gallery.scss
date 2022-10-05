@@ -109,8 +109,9 @@ main{
     position: relative;
     transform: scale(0.8);
 
-&:hover{transform: scale(1.2) rotate(5deg);
-transition: all .5s ease-in-out;}    
+&:hover{
+    transform: scale(1.2) rotate(5deg);
+    transition: all .5s ease-in-out;}
 
 &:hover .overlay{
     opacity: 0;}
@@ -138,9 +139,7 @@ transition: all .5s ease-in-out;}
 
 footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 1;
     background: rgba(17, 17, 17, 0.204);
     height: auto;
     width: 100%;   /*Rosie changed to %*/
