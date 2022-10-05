@@ -20,6 +20,7 @@
     text-decoration: none;
     z-index: 100;
     transform: scale(0.7);
+    cursor: pointer;
 }
 
 .menu {
@@ -53,11 +54,12 @@
     text-decoration: none;
     list-style: none;
     font-size: 24px;
-    color: #FFF;
+    color: #00ff2f;
+    text-transform: Capitalize;
 }
 
 .menu ul li a:hover {
-  color: #00ff2f; 
+    color: #fff; 
 }
 
 .menu li {
@@ -67,12 +69,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    font-size: 14px;
 }
 
 .menu ul li a {
     list-style: none;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 /********** HERO SECTION & HEADER STYLING **********/
@@ -136,7 +137,7 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
-
+    color: #00ff2f;
 }
 
 .text h3 {
@@ -144,6 +145,7 @@
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
+    color: #00ff2f; 
 }
 
 .text p {
@@ -169,7 +171,7 @@
 .text a:hover {
     letter-spacing: 6px;
     background: #511ab7;
-    color: #00ff2f;
+    color:  #00ff2f;
 }
 
 .social {
