@@ -22,12 +22,12 @@ header{
 .menu{display: flex;
     align-items: center;
     gap: 50px;
-
+}
 li a{
     text-decoration:none;
     color: $secondary-color;
     font-family: 'VT323', monospace;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
 &:hover{color: white;
 text-decoration: underline;}
@@ -36,7 +36,7 @@ text-decoration: underline;}
 }
 
 
-}
+
 
 @keyframes myrkrig {
     from{ opacity: 0;}
@@ -44,8 +44,8 @@ text-decoration: underline;}
 }
 
 @keyframes itemzoom {
-    0%  {transform: scale(1);}
-    50% {transform: scale(1.5);}
+    0%  {transform: scale(.9);}
+    50% {transform: scale(1.4);}
     100%{transform: scale(1);}
 }
 
@@ -55,10 +55,6 @@ text-decoration: underline;}
     100%{transform: rotate(2deg);}
 }
 
-/*
-body{
-    background: linear-gradient(180deg, black 0%, #06022c 50%, #04021b 80%, #030567 100%);
-}*/
 
 main{
     margin: auto;
@@ -66,7 +62,6 @@ main{
     width: 100%;
     min-height: 100vh;
     height: 100%;
-   // background-color: aqua;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -76,7 +71,7 @@ main{
     h1{
         font-family: 'VT323', monospace;
         color: $secondary-color;
-        font-size: 6rem;
+        font-size: 5rem;
         margin-bottom: 0px;
     }
     animation: rotate 200s ease infinite;  
@@ -88,13 +83,12 @@ main{
     width: 100%;
     min-height: 900px;
     height: 100%;
-    //background-color: blue;
 }
 
 .gallery__part{
     animation: itemzoom 100s linear infinite;
     width: 80%;
-    margin: 30px;
+    margin: 0px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
