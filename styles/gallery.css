@@ -8,6 +8,35 @@ body, html {
   background-attachment: fixed;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #00ff2f;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+}
+.menu li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.menu li a:active {
+  color: white;
+  text-decoration: underline;
+}
+
 @-webkit-keyframes myrkrig {
   from {
     opacity: 0;
