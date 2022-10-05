@@ -28,7 +28,6 @@ body, html {
     }
 
 
-
 /*>>>>>>>>>FOOTER STYLING>>>>>>>>>>*/
 
 footer {
@@ -36,9 +35,9 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(17, 17, 17, 0.204);
+    background: rgba(17, 17, 17, 0.444);
     height: auto;
-    width: 100%;   /*Rosie changed to %*/
+    width: 100%;   /*Rosie changed to*/
     font-family: "oswald";
     padding-top: 0px;
     color: #fff;
@@ -46,7 +45,7 @@ footer {
 }
 
 .footer-content {
-    background: rgba(0, 0, 0, 0.253);
+    background: rgba(0, 0, 0, 0.42);
     width: 100vw;
     padding: 20px 0;
     text-align: center;
@@ -63,7 +62,7 @@ footer {
     text-transform: uppercase;
     opacity: .4;
     font-weight:200;
-}    
+}
 
 
 /*>>>>>>>>>FORM STYLING ~~flexbox container~~ >>>>>>>>>>*/
@@ -140,42 +139,28 @@ footer {
     font-size: 30px;
 }
 
-
-
-
-
-
-.clickbuttonlabel--styles {
+.Submitform__button--label {
     font-family: 'VT323', monospace;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(0, 255, 47);
+    color: #00ff2f;
 }
 
-.clickbutton--styles {
-    width: 40px;
-    height: 40px;
+.Submitform__button--img {
+    width: 60px;
+    height: 60px;
 }
 
-
-/*
-.submitform__clickbutton {
-    display: flex;
-    justify-self: flex-end;
-    font-family: 'VT323', monospace;
-
-}
-
-.Submitform__clickbutton--styles {
-    width: 20px;
-    height:20px;
-
-    
-    background-size: cover;
+.Submitform__button {
     background: none;
-    border:none;
-    padding: 10px;
+    border-style: none;    
 }
+
+.Submitform__button--img {
+
+}
+
+
 
 
 
