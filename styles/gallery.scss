@@ -71,8 +71,9 @@ main{
     h1{
         font-family: 'VT323', monospace;
         color: $secondary-color;
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 0px;
+        margin-top: 0px;
     }
     animation: rotate 200s ease infinite;  
     color: $primary-color;
