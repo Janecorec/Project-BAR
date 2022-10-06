@@ -6,29 +6,34 @@
      <title>OYSTER PIXEL</title> 
      <link rel = "stylesheet" href="styles/normalize.css">
      <link rel = "stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
      
 </head>
 <body>
     
     <header class="header">
-            <div>
-                <img src=".//images/logo.png" alt="logo" class="logo">
+            <div class="header__items">
+                <img src="/images/logo2.png" alt="logo" class="logo">
                 <nav>
                     <ul class="header__nav">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html">About Us</a></li>
-                        <li><a href="./index.html">Gallery</a></li>
-                        <li><a href="./index.html">Contact Us</a></li>
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./CONTACT.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
     </header>
+
+
+
     <main>
     <section class="Submitform">
-                
             <div class="Submitform__items Submitform__items--styles">
-                <div class="submitform__text--H3"><h3>CONTACT US</h3></div>
+                <div class="submitform__text--H3">
+                    <h3>CONTACT US</h3>
+                </div>
                 <form action="">
                     <div class="Submitform__name Submitform__name--styles">
                         <label for="name">Name:</label>
@@ -42,10 +47,8 @@
                             <label for="text">Enquiry:</label>
                             <textarea class="inputtext" name="Enquiries" id="Enquiries"
                             placeholder="Enquire about group bookings, parties or something special" cols="20" rows="4"></textarea>
-                    </div>
-
-                    <div class="Submitform__dropmenu">
-                        <label for="dropmenu">My favourite retro game:</label>
+                
+                        <label for="dropmenu">Favourite retro game:</label>
                         <select class="selector__text" name ="Game type" id="selecter">
                             <option value ="Street-Fighter">Street Fighter II</option>
                             <option value ="Zelda">Zelda</option>
@@ -62,15 +65,13 @@
                             <label for="password">Choose password:</label>
                             <input class="inputtext" type="password" id="password" placeholder="keep it secrect">
                     </div>
-
+                    <div class="Submitform__button">
+                            <label for = "button" class="Submitform__button--label">Ready Player One >>></label>
+                            <button class="animate__animated animate__pulse animate__infinite Submitform__button" type="submit"><img class="animate__animated animate__pulse Submitform__button--img" src="images/favicon2.png"></button>    
+                    </div>
                     <div class="Submitform__Checkbox Submitform__Checkbox--styles">
                         <input class="inputtext inputtext__checkbox--tick" type="checkbox" checked id="checkbox">
                         <label class="checkbox--smallprint" for="checkbox">Add me to the Pixelated Oyster VIP list *(be the first to hear about events + receive VIP discounts!)</label>
-                    </div>
-
-                    <div class="Submitform__button">
-                            <label for = "button" class="Submitform__button--label">Ready Player One!</label>
-                            <button class="Submitform__button" type="submit"><img class="Submitform__button--img" src="images/favicon2.png"></button>    
                     </div>
                 </form>
             </div>

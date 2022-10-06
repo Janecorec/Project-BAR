@@ -24,31 +24,71 @@ body, html {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     }
 
 
+/*>>>>>>>>>>HEADER STYLING>>>>>>>>>*/    
 .header {
-  position: sticky;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
+
   max-width: 1400px;
   width: 100%;
+  min-height:40px;
 }
+        .header__items {
+            display:flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            position: fixed;
+        }
+
+            .logo {
+            display: flex;
+            
+            width: 200px;
+            height:80px;
+            }
+
+            .header__nav {
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            }
+                a {
+                font-family: 'VT323', monospace;
+                font-size: 20px;
+                color: #00ff2f;
+                text-decoration: none;
+                margin: 5px;
+                }
+                a:hover {
+                color: white;
+                text-decoration: none;
+                }
 
 /*>>>>>>>>>FOOTER STYLING>>>>>>>>>>*/
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(17, 17, 17, 0.444);
     height: auto;
     width: 100%;   /*Rosie changed to*/
-    font-family: "oswald";
+    font-family:'Courier New', Courier, monospace;
     padding-top: 0px;
     color: #fff;
     z-index: 10000;
@@ -79,29 +119,18 @@ footer {
 .Submitform {
     display: flex;
     
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     
-
-    margin: 10px;
-    padding: 10px;
-    width:fit-content;
-    height:fit-content;
-
-    background-color: rgba(255, 255, 255, 0.234);
-    border-radius: 0px;
-    border-style: double;
-    border-width: 10px;
-    border-color: rgb(25, 4, 37);
 }
 
 /*>>>>>>>>>FORM STYLING ~~flexbox items~~ >>>>>>>>>>*/
 .Submitform__items {
     display:flex;
     /*reversed due to column*/
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     padding: 5px;
@@ -112,6 +141,17 @@ footer {
     border-style: double;
     border-color: black;
     box-shadow: 4,4,4,4 inset #5555;*/
+
+    margin: 3px;
+    padding: 5px;
+    width:auto;
+    height:auto;
+
+    background-color: rgba(255, 255, 255, 0.234);
+    border-radius: 0px;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(10, 1, 15);
     
 }
 
@@ -129,8 +169,8 @@ footer {
 
 .Submitform__name, .Submitform__enquiretext, .Submitform__email, .Submitform__clickbutton, 
 .Submitform__password, .Submitform__Checkbox, .Submitform__dropmenu {
-    margin: 10;
-    margin-left: 10px;
+    
+    
     padding: 10px;
     font-size: 16px;
     
@@ -142,18 +182,20 @@ footer {
 
 .submitform__text--H3 {
     /*CONTACT US*/
-    margin-left: 10px;
     font-family: 'VT323', monospace;
     color:rgb(0, 255, 47);
-    font-weight:600;
+    font-weight:500;
     font-size: 30px;
+    margin-left: 10px;
 }
 
 .Submitform__button--label {
     font-family: 'VT323', monospace;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     color: #00ff2f;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .Submitform__button--img {
@@ -166,11 +208,8 @@ footer {
     border-style: none;    
 }
 
-.Submitform__button--img {
-
+.Submitform__button--img:hover {
+    
+    cursor:pointer;
 }
-
-
-
-
-
+    
