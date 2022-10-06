@@ -1,0 +1,216 @@
+
+
+
+body, html {  
+    height: 100%;
+
+    /* The image used */
+    background-image: url(../images/Project\ 1.png);
+  
+    /* Full height */
+    height: 100%;
+ 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+
+
+    max-width: 1400px;
+    width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
+
+
+/*>>>>>>>>>>HEADER STYLING>>>>>>>>>*/    
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  max-width: 1400px;
+  width: 100%;
+  min-height:40px;
+}
+        .header__items {
+            display:flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            position: fixed;
+        }
+
+            .logo {
+            display: flex;
+            
+            width: 200px;
+            height:80px;
+            }
+
+            .header__nav {
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            }
+                a {
+                font-family: 'VT323', monospace;
+                font-size: 20px;
+                color: #00ff2f;
+                text-decoration: none;
+                margin: 5px;
+                }
+                a:hover {
+                color: white;
+                text-decoration: none;
+                }
+
+/*>>>>>>>>>FOOTER STYLING>>>>>>>>>>*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.444);
+    height: auto;
+    width: 100%;   /*Rosie changed to*/
+    font-family:'Courier New', Courier, monospace;
+    padding-top: 0px;
+    color: #fff;
+    z-index: 10000;
+}
+
+.footer-content {
+    background: rgba(0, 0, 0, 0.42);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.footer-content span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight:200;
+}
+
+
+/*>>>>>>>>>FORM STYLING ~~flexbox container~~ >>>>>>>>>>*/
+.Submitform {
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+/*>>>>>>>>>FORM STYLING ~~flexbox items~~ >>>>>>>>>>*/
+.Submitform__items {
+    display:flex;
+    /*reversed due to column*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px;
+    /*
+    padding: 20px;
+    background-color: rgb(246, 241, 241);
+    border-radius: 4px;
+    border-style: double;
+    border-color: black;
+    box-shadow: 4,4,4,4 inset #5555;*/
+
+    margin: 3px;
+    padding: 5px;
+    width:auto;
+    height:auto;
+
+    background-color: rgba(255, 255, 255, 0.234);
+    border-radius: 0px;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(10, 1, 15);
+    
+}
+
+.Submitform__items--styles {
+    font-family: 'VT323', monospace;
+    color:rgb(255, 255, 255);
+}
+
+
+.inputtext, .selector__text, input {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color:blueviolet;
+}
+
+.Submitform__name, .Submitform__enquiretext, .Submitform__email, .Submitform__clickbutton, 
+.Submitform__password, .Submitform__Checkbox, .Submitform__dropmenu {
+    
+    
+    padding: 10px;
+    font-size: 16px;
+    
+}
+
+.checkbox--smallprint {
+    font-size: 12px;
+}
+
+.submitform__text--H3 {
+    /*CONTACT US*/
+    font-family: 'VT323', monospace;
+    color:rgb(0, 255, 47);
+    font-weight:500;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.Submitform__button--label {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    font-weight: 700;
+    color: #00ff2f;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.Submitform__button--img {
+    width: 60px;
+    height: 60px;
+}
+
+.Submitform__button {
+    background: none;
+    border-style: none;    
+}
+
+.Submitform__button--img:hover {
+    
+    cursor:pointer;
+    
+}
+    
